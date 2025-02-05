@@ -11,6 +11,9 @@ export default defineConfig({
   build: {
     commonjsOptions: {
       include: [/html-to-image/, /node_modules/]
+    },
+    rollupOptions: {
+      external: [/@rollup\/rollup-linux-x64-gnu/]
     }
   }
 });
